@@ -21,7 +21,6 @@ export class MainPageComponent implements OnInit {
       
       this.idAdvice = data.slip.id;
       this.textAdvice = data.slip.advice;
-      console.log(this.idAdvice);
     })
     
   };

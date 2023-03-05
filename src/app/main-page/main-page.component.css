@@ -61,6 +61,10 @@ main {
 }
 
 @media(max-width: 425px) {
+  .container {
+    width: 80vw;
+    height: 70vh;
+  }
   #desktop-version {
     display: none;
   }

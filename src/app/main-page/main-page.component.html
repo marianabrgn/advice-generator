@@ -1,3 +1,13 @@
 <main>
-  <button>teste</button>
+  <div class="container">
+    <div id="id-advice">ADVICE #{{idAdvice}}</div>
+    <div id="text-advice">"{{textAdvice}}"</div>
+    <div id="svg">
+      <img class="svgs" id="desktop-version" src="../../assets/images/pattern-divider-desktop.svg" alt="">
+      <img class="svgs" id="mobile-version" src="../../assets/images/pattern-divider-mobile.svg" alt="">
+    </div>
+  </div>
+  <button (click)="getAdvice()" id="button">
+    <img src="../../assets/images/icon-dice.svg" alt="">
+  </button>
 </main>

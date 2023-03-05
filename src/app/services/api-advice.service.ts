@@ -1,16 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ApiAdviceService {
 
   constructor(
     private http: HttpClient
   ) { }
 
-  getAdvice(){
-    return this.http.get('https://api.adviceslip.com/')
+  getAdviceFromAPI(){
+    return this.http.get<any>('https://api.adviceslip.com/advice');
   }
 }
